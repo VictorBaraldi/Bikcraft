@@ -1,9 +1,14 @@
+@import "global/components.css";
+@import "global/header.css";
+@import "global/global.css";
+@import "home/introducao.css";
+
 :root {
   --color-c12: #000000;
   --color-c11: #111111;
   --color-c10: #2e2e2e;
   --color-c09: #3f3f3f;
-  --color-c09: #585858;
+  --color-c08: #585858;
   --color-c07: #707070;
   --color-c06: #9a9a9a;
   --color-c05: #b3b3b3;
@@ -11,97 +16,11 @@
   --color-c03: #dddddd;
   --color-c02: #ececec;
   --color-c01: #f7f7f7;
-  --color-white: #ffffff;
+  --color-c00: #ffffff;
   --main-color-5: #332200;
   --main-color-4: #664400;
   --main-color-3: #a66f00;
   --main-color-2: #e4a30b;
   --main-color-1: #ffbb00;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header-bg {
-  background-color: var(--color-c12);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.875rem;
-  max-width: 75rem;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-}
-
-.header-menu {
-  display: flex;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.header-menu a {
-  display: inline-block;
-  padding: 1rem 0;
-  font-size: 1.125rem;
-  line-height: 2.25rem;
-  color: var(--color-white);
-  position: relative;
-}
-
-.header-menu a:after {
-  content: "";
-  display: block;
-  height: 0.125rem;
-  width: 0%;
-  background-color: var(--color-white);
-  margin-top: 0.25rem;
-  position: absolute;
-}
-.header-menu a:hover:after {
-  width: 100%;
-  transition: 0.3s;
-}
-
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 1.25rem;
-  }
-
-  .header-menu a {
-    background-color: var(--color-c11);
-    padding: 0.75rem 1rem;
-    border-radius: 0.25rem;
-  }
-
-  .header-menu a:hover {
-    background-color: var(--color-c10);
-  }
-  .header-menu a::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 0.75rem;
-  }
-
-  .header-menu a {
-    padding: 0.5rem 0.75rem;
-  }
+  --gradiente: linear-gradient(#ffbb00, #f2a50c);
 }
