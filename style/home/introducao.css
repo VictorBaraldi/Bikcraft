@@ -6,9 +6,6 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 75rem;
-  padding: 0 1.25rem;
-  margin: 0 auto;
   gap: 40px;
 }
 
@@ -26,7 +23,6 @@
 }
 
 .main img {
-  border-radius: 0.25rem;
   object-fit: cover;
 }
 

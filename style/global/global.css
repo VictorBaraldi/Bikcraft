@@ -16,3 +16,10 @@ img {
   max-width: 100%;
   display: block;
 }
+img[src$=".jpg"] {
+  border-radius: 0.25rem;
+}
+
+li {
+  list-style: none;
+}
