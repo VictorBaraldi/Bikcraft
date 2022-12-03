@@ -1,0 +1,106 @@
+.seguros-bg {
+  background-color: var(--color-c11);
+  padding-bottom: 200px;
+}
+
+.seguros {
+  padding-top: 60px;
+}
+
+.seguros-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.seguros-desc li {
+  color: var(--color-c00);
+  font: 400 1.125rem/1.333 "Roboto", sans-serif;
+  margin-top: 20px;
+  list-style-image: url("../../assets/icons/menus/lista.svg");
+}
+
+#btn-lista {
+  background-image: none;
+  background-color: var(--color-c10);
+  color: var(--color-c04);
+}
+
+#btn-lista:hover {
+  background-color: var(--color-c08);
+}
+
+.seguros-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-c12);
+  padding: 32px 32px 32px 64px;
+  border-radius: 0.25rem;
+  grid-template-rows: repeat(3, max-content);
+}
+
+.seguros-lista h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.seguros-lista a {
+  grid-column: 1;
+}
+
+.seguro-preco {
+  justify-self: end;
+}
+
+.seguro-preco span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.btn-yellow {
+  margin-top: 32px;
+}
+
+.btn-yellow:hover {
+  background-image: none;
+  background-color: var(--main-color-1);
+}
+
+.seguro-prata {
+  max-height: 390px;
+}
+
+@media (max-width: 1000px) {
+  .seguros-desc {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .seguros-desc li {
+    font: 400 0.8rem/1.2 "Roboto", sans-serif;
+  }
+
+  .seguro-prata {
+    max-height: none;
+  }
+
+  .btn-yellow {
+    font-size: 0.7rem;
+  }
+
+  .seguros {
+    padding-top: 30px;
+  }
+
+  .seguros-lista {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .seguros-bg {
+    background-color: var(--color-c11);
+    padding-bottom: 80px;
+  }
+}
