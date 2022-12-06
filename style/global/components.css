@@ -74,6 +74,12 @@
   color: var(--color-c00);
 }
 
+.seta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .black-bg {
   background-color: var(--color-c12);
 }

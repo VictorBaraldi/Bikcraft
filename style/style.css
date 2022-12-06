@@ -9,6 +9,7 @@
 @import "home/depoimento.css";
 @import "home/seguros.css";
 @import "bicicletas/bicicleta.css";
+@import "seguros/seguros.css";
 
 :root {
   --color-c12: #000000;

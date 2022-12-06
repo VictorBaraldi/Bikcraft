@@ -1,0 +1,21 @@
+#seguro {
+  margin-top: 0px;
+}
+
+.vantagens-bg {
+  background-color: var(--color-c12);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: flex-end;
+}
