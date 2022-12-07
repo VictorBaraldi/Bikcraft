@@ -9,8 +9,10 @@
 @import "./home/depoimento.css";
 @import "./home/seguros.css";
 @import "./bicicletas/bicicleta.css";
-@import "./bicicletas/nimbus.css";
+@import "./bicicletas/escolha-interna.css";
+@import "./bicicletas/intro-interna.css";
 @import "./seguros/seguros.css";
+@import "./contato/contato.css";
 
 :root {
   --color-c12: #000000;

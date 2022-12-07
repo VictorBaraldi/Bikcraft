@@ -1,0 +1,28 @@
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-info {
+  background-color: var(--color-c12);
+  padding: 60px;
+}
+
+.contato-info h3 {
+  margin-bottom: 60px;
+}
+
+.contato-info div {
+  margin-bottom: 32px;
+}
+
+.contato-social {
+  margin-top: 60px;
+  display: flex;
+  gap: 32px;
+}
+
+.contato-msg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

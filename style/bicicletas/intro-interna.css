@@ -8,6 +8,10 @@
   gap: 40px;
 }
 
+.interno h2 {
+  padding-bottom: 12px;
+}
+
 .interno-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,6 +27,7 @@
   display: grid;
   grid-template-columns: 1.3fr 1.7fr;
   grid-template-rows: max-content max-content;
+  margin-bottom: 40px;
 }
 
 .interno-desc a button {
@@ -56,4 +61,59 @@
   background-color: var(--color-c12);
   padding: 32px;
   gap: 32px;
+  margin-bottom: 40px;
+}
+
+.interno-dados {
+  background-color: var(--color-c12);
+  padding: 32px;
+  margin-bottom: 60px;
+}
+
+.interno-dados ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.interno-dados ul li:nth-child(even) {
+  width: 100%;
+  justify-self: end;
+  text-align: end;
+}
+
+.interno-dados li:nth-child(n + 3):nth-child(-n + 12) {
+  border-top: 1px solid var(--color-c10);
+  padding: 8px;
+}
+
+.interno-dados li:nth-child(n):nth-child(-n + 2) {
+  padding: 8px;
+}
+
+@media (max-width: 800px) {
+  .interno {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .interno-img {
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    margin-bottom: 60px;
+  }
+
+  .interno-dados {
+    margin-bottom: 20px;
+  }
+
+  .interno-escolha {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .interno {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }

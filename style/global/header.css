@@ -57,6 +57,10 @@
 }
 
 @media (max-width: 600px) {
+  .header {
+    height: 132px;
+  }
+
   .header-menu {
     gap: 0.75rem;
   }
