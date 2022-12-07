@@ -1,0 +1,59 @@
+.interno-bg {
+  background-color: var(--color-c11);
+}
+
+.interno {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 40px;
+}
+
+.interno-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, max-content);
+  gap: 20px;
+}
+
+.interno-img img:first-child {
+  grid-column: 1/-1;
+}
+
+.interno-desc {
+  display: grid;
+  grid-template-columns: 1.3fr 1.7fr;
+  grid-template-rows: max-content max-content;
+}
+
+.interno-desc a button {
+  margin: 0;
+}
+
+.interno-desc p {
+  grid-column: 1/-1;
+  margin-bottom: 35px;
+}
+
+.interno-detalhe {
+  display: grid;
+  align-items: center;
+}
+
+.interno-detalhe div {
+  background-color: var(--color-c12);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  max-width: max-content;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.interno-vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-c12);
+  padding: 32px;
+  gap: 32px;
+}
