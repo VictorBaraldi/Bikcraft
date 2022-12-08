@@ -1,0 +1,66 @@
+.locais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+.locais h2 {
+  grid-column: 1/ -1;
+}
+
+.locais-lojas {
+  background-color: var(--color-c00);
+  margin-top: 40px;
+}
+
+.locais-lojas img {
+  grid-column: 1/ -1;
+}
+
+.locais-lojas h3 {
+  grid-column: 1/ -1;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.locais-lojas h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--main-color-1);
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-right: 12px;
+}
+
+.locais-lojas .dados {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.locais-lojas .dados div {
+  margin-bottom: 32px;
+  border-left: 2px solid var(--color-c02);
+  padding-left: 16px;
+}
+
+.locais-lojas .dados span {
+  grid-column: 1 /-1;
+  font-weight: 500;
+  background: url("../../assets/icons/menus/relogio.svg") no-repeat 0px 3px;
+  padding-left: 28px;
+}
+
+@media (max-width: 800px) {
+  .locais {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+
+  .locais-lojas .dados {
+    grid-template-columns: 1fr;
+  }
+}
