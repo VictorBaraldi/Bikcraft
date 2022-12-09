@@ -15,6 +15,7 @@
 @import "./seguros/seguros.css";
 @import "./contato/contato.css";
 @import "./contato/lojas.css";
+@import "./orcamento/orcamento.css";
 
 :root {
   --color-c12: #000000;
