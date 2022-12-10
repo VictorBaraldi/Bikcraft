@@ -16,7 +16,8 @@
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea {
+.form textarea,
+.form select {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background: var(--color-c01);
   border: 1px solid var(--color-c02);
@@ -32,6 +33,14 @@
   border-color: var(--main-color-1);
   background-color: var(--color-c00);
   box-shadow: 0 0 0 2px #fea;
+}
+
+#orcamento-termos {
+  display: inline-block;
+}
+
+.form checkbox {
+  padding: 20px;
 }
 
 @media (max-width: 600px) {

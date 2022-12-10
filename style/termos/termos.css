@@ -1,0 +1,30 @@
+.termos {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.termos p {
+  max-width: 80ch;
+  font: 500 1.125rem/1.333 "Roboto", sans-serif;
+  color: var(--color-c09);
+}
+
+.termos p + p {
+  margin-top: 16px;
+}
+
+.termos h2 {
+  margin-bottom: 20px;
+  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.termos div {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .termos {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
