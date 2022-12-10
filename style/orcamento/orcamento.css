@@ -5,6 +5,7 @@
 .orcamento {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 60px;
 }
 
 .orcamento-produto {
@@ -114,4 +115,53 @@
 #seguro:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
+}
+
+.orcamento-detalhes {
+  background-color: var(--color-c00);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: none;
+  border-radius: 5px;
+}
+
+#magic:checked + label + .orcamento-detalhes,
+#nimbus:checked + label + .orcamento-detalhes,
+#nebula:checked + label + .orcamento-detalhes {
+  display: grid;
+}
+
+.orcamento-detalhes ul li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.orcamento-detalhes ul li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+  }
+  .orcamento-produto {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .orcamento-dados {
+    border-radius: 0 0 5px 5px;
+  }
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+  }
 }
