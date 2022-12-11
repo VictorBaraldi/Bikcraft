@@ -32,9 +32,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 20px;
-  background-color: var(--color-c11);
+  background: var(--color-c11)
+    url(../../assets/icons/decoradores/bottom-right-s.svg) no-repeat bottom
+    160px right 40px;
   box-shadow: inset 0px -120px var(--color-c12),
     inset 0px 120px var(--color-c00);
+  padding-bottom: 60px;
 }
 
 .interno-seguro img {

@@ -1,5 +1,7 @@
 .interno-bg {
-  background-color: var(--color-c11);
+  background: var(--color-c11)
+    url(../../assets/icons/decoradores/bottom-left-s.svg) no-repeat bottom 40px
+    left 40px;
 }
 
 .interno {

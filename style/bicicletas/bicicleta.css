@@ -7,7 +7,9 @@
 }
 
 .titulo-bg {
-  background-color: var(--color-c11);
+  background: var(--color-c11)
+    url(../../assets/icons/decoradores/top-right-s.svg) no-repeat top 40px right
+    40px;
   padding: 60px 0px;
 }
 

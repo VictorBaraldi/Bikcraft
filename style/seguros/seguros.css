@@ -10,6 +10,12 @@
   padding-bottom: 60px;
 }
 
+.seguros-bg {
+  background: var(--color-c11)
+    url(../../assets/icons/decoradores/bottom-left-s.svg) no-repeat bottom 40px
+    left 40px;
+}
+
 .vantagens-bg {
   background-color: var(--color-c12);
   padding-top: 120px;

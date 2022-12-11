@@ -1,6 +1,9 @@
 .main-bg {
   width: 100%;
   box-shadow: inset 0px -120px var(--color-c00);
+  background: var(--color-c12)
+    url(../../assets/icons/decoradores/bottom-left-s.svg) no-repeat bottom 160px
+    left 40px;
 }
 
 .main {
