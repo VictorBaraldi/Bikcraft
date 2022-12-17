@@ -32,10 +32,13 @@
   margin-top: 0.25rem;
   position: absolute;
 }
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
   transition: 0.3s;
 }
+
+
 
 @media (max-width: 800px) {
   .header-menu {
