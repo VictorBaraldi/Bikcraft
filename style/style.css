@@ -3,6 +3,7 @@
 @import "./global/global.css";
 @import "./global/footer.css";
 @import "./global/formulario.css";
+@import "./global/animacao.css";
 @import "./home/introducao.css";
 @import "./home/escolha.css";
 @import "./home/tecnologia.css";

@@ -13,6 +13,7 @@
 
 .escolha-lista-itens img {
   margin-bottom: 1rem;
+  max-height: 560px;
 }
 
 .escolha-lista-itens h3 {
@@ -54,10 +55,9 @@
 }
 
 @media (max-width: 1300px) {
-  .escolha-lista-itens img { 
+  .escolha-lista-itens img {
     max-height: 450px;
   }
- 
 }
 
 @media (max-width: 800px) {
@@ -67,8 +67,7 @@
 }
 
 @media (max-width: 500px) {
-  .escolha-lista-itens img { 
+  .escolha-lista-itens img {
     max-height: 300px;
   }
- 
 }

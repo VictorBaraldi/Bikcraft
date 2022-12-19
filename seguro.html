@@ -8,11 +8,15 @@
     <title>Bikcraft - Bicicletas Elétricas</title>
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, 
     feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preload" href="./style/style.css" as="style">
+    <link rel="stylesheet" href="./style/style.min.css">
+    <link rel="preload" href="./style/style.min.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/icons/menus/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 
 <body id="seguro">
@@ -42,7 +46,7 @@
         <article class="seguros-bg">
             <div class="container seguros">
                 <div class="seguros-desc">
-                    <div class="seguros-lista seguro-prata">
+                    <div class="seguros-lista seguro-prata fadeInLeft" data-anime="200">
                         <h2 class="font-1-xl cor-06">Prata</h2>
                         <div class="seguro-preco">
                             <span class="cor-01 font-1-xl">R$199</span>
@@ -56,7 +60,7 @@
                         </ul>
                         <a href="orcamento.html"><button class="btn-yellow" id="btn-lista">SELECIONE A SUA</button></a>
                     </div>
-                    <div class="seguros-lista">
+                    <div class="seguros-lista fadeInRight" data-anime="400">
                         <h2 class="font-1-xl main-01">Ouro</h2>
                         <div class="seguro-preco">
                             <span class="cor-01 font-1-xl">R$299</span>
@@ -202,6 +206,7 @@
             <p class="footer-copy font-2-m cor-06">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

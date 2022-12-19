@@ -8,13 +8,18 @@
     <title>Bikcraft - Bicicletas Elétricas</title>
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, 
     feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/icons/menus/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link rel="preload" href="./style/style.css" as="style">
+    <link rel="preload" href="./style/style.min.css" as="style">
+
+
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 
 <body>
@@ -36,11 +41,11 @@
     <main class="main-bg">
         <div class="main container">
             <div class="main-content ">
-                <h1 class="container font-1-xxl cor-00 ">Bicicletas feitas sob medidas<span>.</span></h1>
-                <p class="font-2-l cor-05">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-                <a href="bicicletas.html"><button class="btn-yellow">ESCOLHA A SUA</button></a>
+                <h1 class="container font-1-xxl cor-00 fadeInDown" data-anime="200">Bicicletas feitas sob medidas<span>.</span></h1>
+                <p class="font-2-l cor-05 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+                <a href="bicicletas.html" data-anime="600"><button class="btn-yellow fadeInDown">ESCOLHA A SUA</button></a>
             </div>
-            <picture>
+            <picture data-anime="800" class="fadeInDown">
                 <source media="(max-width:800px)" srcset="assets/images/bikes/nimbus-interna.jpg">
                 <img src="assets/images/gerais/introducao.jpg" alt="Foto bicicleta">
             </picture>
@@ -204,6 +209,8 @@
             <p class="footer-copy font-2-m cor-06">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

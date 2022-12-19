@@ -34,3 +34,29 @@ function ativarPergunta(e) {
 }
 
 perguntas.forEach(eventosPerguntas);
+
+//imagens
+
+const imagens = document.querySelectorAll(".interno-img img");
+const galeriaImg = document.querySelector(".interno-img");
+
+function trocaImagem(item) {
+  item.addEventListener("click", selecionaImagem);
+}
+
+function selecionaImagem(e) {
+  const img = e.target;
+  const media = matchMedia("(min-width: 1000px)").matches;
+  console.log(media);
+  if (media) {
+    galeriaImg.prepend(img);
+  }
+}
+
+imagens.forEach(trocaImagem);
+
+//Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

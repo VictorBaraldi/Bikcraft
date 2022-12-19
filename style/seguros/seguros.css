@@ -55,14 +55,14 @@
   padding-bottom: 20px;
 }
 
-.perguntas dd {
+.js .perguntas dd {
   padding-bottom: 20px;
   max-width: 720px;
   margin-top: 16px;
   display: none;
 }
 
-.perguntas dd.ativa {
+.js .perguntas dd.ativa {
   display: block;
 }
 
