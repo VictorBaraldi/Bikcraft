@@ -66,6 +66,19 @@
   margin-bottom: 40px;
 }
 
+.interno-vantagens img {
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.interno-vantagens div:nth-child(3n) img {
+  height: 25px;
+}
+
+.interno-vantagens div:nth-child(4n) img {
+  height: 25px;
+}
+
 .interno-dados {
   background-color: var(--color-c12);
   padding: 32px;

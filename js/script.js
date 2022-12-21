@@ -12,6 +12,19 @@ function pageSelect(value) {
 
 menu.forEach(pageSelect);
 
+//Ativar itens
+
+const parametros = new URLSearchParams(location.search);
+
+function ativarProduto(parametro) {
+  const elemento = document.getElementById(parametro);
+  if (elemento) {
+    elemento.checked = true;
+  }
+}
+
+parametros.forEach(ativarProduto);
+
 //Perguntas
 
 const perguntas = document.querySelectorAll(".perguntas button");
